@@ -20,16 +20,16 @@ app.use("/static",express.static("./public"))
 
 app.use("/",indexRouter)
 
-mongoose.connect(process.env.DATABASE_URL,{useNewUrlParser:true})
-const db = mongoose.connection
+// mongoose.connect(process.env.DATABASE_URL,{useNewUrlParser:true})
+// const db = mongoose.connection
 
-db.on("error",(err)=>{
-    console.log(err);
-})
+// db.on("error",(err)=>{
+//     console.log(err);
+// })
 
-db.once("open",()=>{
-    console.log("connected to db");
-})
+// db.once("open",()=>{
+//     console.log("connected to db");
+// })
 app.listen(PORT,()=>{
     console.log("server listning on port ",PORT);
 })
