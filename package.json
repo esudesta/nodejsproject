@@ -1,0 +1,32 @@
+{
+  "name": "github",
+  "version": "1.0.0",
+  "description": "github nodejs practice",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node sever.js",
+    "devStart": "nodemon sever.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "esudesta5@gmail.com"
+  },
+  "keywords": [
+    "nodejs",
+    "node",
+    "github"
+  ],
+  "author": "esral",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "mongoose": "^6.7.4",
+    "nodemon": "^2.0.20"
+  }
+}
